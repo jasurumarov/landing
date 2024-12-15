@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     return (
         <header className='py-2 sm:py-3 bg-white'>
             <div className='max-w-[1110px] mx-auto px-4 flex items-center justify-between'>
-                <ul className={`w-full sm:w-auto bg-white flex flex-col sm:flex-row items-center sm:gap-6 md:gap-10 lg:gap-[60px] absolute sm:static z-10 left-0 top-[55px] duration-300 origin-top shadow sm:shadow-none ${toggleMenu ? 'scale-y-100' : 'scale-y-0'}`}>
+                <ul className={`w-full sm:w-auto bg-white flex flex-col sm:flex-row items-center sm:gap-6 md:gap-10 lg:gap-[60px] absolute sm:static z-10 left-0 top-[55px] duration-300 origin-top shadow sm:shadow-none sm:scale-100 ${toggleMenu ? 'scale-y-100' : 'scale-y-0'}`}>
                     <li className='py-2 border-y-2 w-full text-center sm:border-none'>
                         <a href={'#'} className='text-[#505F98] font-roboto5 hover:border-b-2 border-[#505F98] duration-75'>Home</a>
                     </li>
