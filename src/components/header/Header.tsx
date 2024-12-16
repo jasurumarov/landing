@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { IoMenu } from 'react-icons/io5'
 
 const Header: React.FC = () => {
+    // Bu state headerdagi burger menuni ishlatish uchun qilindi  
     const [toggleMenu, setToggleMenu] = useState<boolean>(false)
     return (
         <header className='fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 bg-white'>
