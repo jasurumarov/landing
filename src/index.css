@@ -18,3 +18,22 @@
   font-family: 'Roboto900';
   src: url('/src/assets/fonts/Roboto-Black.ttf');
 }
+
+.bg-purchase {
+  background-image: url('./assets/icons/purchase-bg.svg');
+  background-size: 2000px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.bg-hero {
+  background-image: url('./assets/images/hero-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (max-width: 862px) {
+  .bg-hero {
+    background-image: none;
+  }
+}
