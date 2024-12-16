@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+// Aos kutubxonasi - animatsiyalar uchun ishlatiladi
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero: React.FC = () => {
+    // Komponent render bo'lganda birinchilardan bo'lib aos kutub xonasini ishga tushuradi.
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <section className="">
+        <section data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className="">
             <div className='max-w-[1110px] mx-auto px-4'>
                 <div className='bg-hero mt-28 sm:mt-10 py-10 sm:py-40'>
                     <div className='max-w-[540px]'>

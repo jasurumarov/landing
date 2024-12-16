@@ -13,13 +13,13 @@ const Header: React.FC = () => {
                 <div className='max-w-[1110px] mx-auto px-4 flex items-center justify-between'>
                     <ul className={`w-full sm:w-auto bg-white flex flex-col sm:flex-row items-center sm:gap-6 md:gap-10 lg:gap-[60px] fixed sm:static left-0 top-[55px] duration-300 origin-top shadow sm:shadow-none sm:scale-100 ${toggleMenu ? 'scale-y-100' : 'scale-y-0'}`}>
                         <li className='py-2 border-y-2 w-full text-center sm:border-none'>
-                            <a onClick={() => setToggleMenu(prev => !prev)} href={'#'} className='text-[#505F98] font-roboto5 hover:border-b-2 border-[#505F98] duration-75'>Home</a>
+                            <a onClick={() => setToggleMenu(false)} href={'#'} className='text-[#505F98] font-roboto5 hover:border-b-2 border-[#505F98] duration-75'>Home</a>
                         </li>
                         <li className='py-2 w-full text-center sm:border-none'>
-                            <a onClick={() => setToggleMenu(prev => !prev)} href={'#about'} className='text-[#505F98] font-roboto5 hover:border-b-2 border-[#505F98] duration-75'>About</a>
+                            <a onClick={() => setToggleMenu(false)} href={'#about'} className='text-[#505F98] font-roboto5 hover:border-b-2 border-[#505F98] duration-75'>About</a>
                         </li>
                         <li className='py-2 border-y-2 w-full text-center sm:border-none'>
-                            <a onClick={() => setToggleMenu(prev => !prev)} href={'#contact'} className='text-[#505F98] font-roboto5 hover:border-b-2 border-[#505F98] duration-75'>Contact</a>
+                            <a onClick={() => setToggleMenu(false)} href={'#contact'} className='text-[#505F98] font-roboto5 hover:border-b-2 border-[#505F98] duration-75'>Contact</a>
                         </li>
                         <button className='my-4 sm:hidden sm:ml-10 md:ml-24 w-[100px] sm:w-[160px] bg-[#111B47] text-white text-sm py-1 font-roboto sm:font-roboto5 rounded active:scale-[.97] hover:opacity-90 duration-200'>Buy Now</button>
                     </ul>
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
             </header>
             {toggleMenu && (
                 <div
-                    className="overlay fixed inset-0 z-20 bg-black bg-opacity-50"
+                    className="sm:hidden block fixed inset-0 z-20 bg-black bg-opacity-50"
                     onClick={() => setToggleMenu(false)}
                 ></div>
             )}

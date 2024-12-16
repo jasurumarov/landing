@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+// Aos kutubxonasi - animatsiyalar uchun ishlatiladi
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Images
 import SaleFirst from '../../assets/images/sale-first.svg'
@@ -13,8 +17,12 @@ interface SaleProps {
 }
 
 const Sale: React.FC<SaleProps> = ({ heading, img, btn }) => {
+    // Komponent render bo'lganda birinchilardan bo'lib aos kutub xonasini ishga tushuradi.
+    useEffect(() => {
+            AOS.init();
+        }, []);
     return (
-        <section className='py-10 sm:py-[120px] flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-0 justify-between max-w-[1110px] mx-auto px-4'>
+        <section data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className='py-10 sm:py-[120px] flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-0 justify-between max-w-[1110px] mx-auto px-4'>
             <div className='max-w-[540px] w-full flex justify-center'>
                 <img src={img === 'first' ? SaleFirst : img === 'second' ? SaleSecond : SaleThird} alt="Image" />
             </div>
