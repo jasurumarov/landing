@@ -19,6 +19,10 @@
   src: url('/src/assets/fonts/Roboto-Black.ttf');
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 .bg-purchase {
   background-image: url('./assets/icons/purchase-bg.svg');
   background-size: 2000px;
