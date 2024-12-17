@@ -10,8 +10,8 @@ const Purchase: React.FC = () => {
             AOS.init();
         }, []);
     return (
-        <section data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" id='contact' className={`sm:pb-[172px] sm:pt-[250px] pb-[102px] pt-[180px] bg-purchase`}>
-            <div className='flex flex-col items-center max-w-[1110px] mx-auto px-4'>
+        <section  id='contact' className={`sm:pb-[172px] sm:pt-[250px] pb-[102px] pt-[180px] bg-purchase`}>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className='flex flex-col items-center max-w-[1110px] mx-auto px-4'>
                 <h3 className='mb-4 font-roboto5 text-[32px] lg:text-3xl text-center text-[#091133]'>A Price To Suit Everyone</h3>
                 <p className='mb-9 text-center text-[16px] text-[#505F98] max-w-[600px]'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
                 <h2 className='text-[50px] font-roboto5 text-[#222F65]'>$40</h2>

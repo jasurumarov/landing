@@ -9,9 +9,6 @@ export default {
     extend: {
       colors: {
         "desc": "#505F98"
-      },
-      backgroundImage: {
-        'hero-bg': "url('../../assets/images/hero-bg.png')",
       }
     },
     fontFamily: {

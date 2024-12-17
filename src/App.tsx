@@ -6,6 +6,7 @@ import About from "./components/about/About"
 import Sale from "./components/sale/Sale"
 import Purchase from "./components/purchase/Purchase"
 import Footer from "./components/footer/Footer"
+import Backtop from "./components/backtop/Backtop"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </main>
 
       <Footer />
+      <Backtop />
     </>
   )
 }
