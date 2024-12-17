@@ -24,7 +24,7 @@ const Backtop: React.FC = () => {
         window.scrollTo(0, 0)
     }
     return (
-        <a onClick={HandleTop} href={'#'} className={`opacity-100 fixed z-20 right-[2%] bottom-[-10%] bg-white w-12 h-12 border flex items-center justify-center text-xl rounded-[50%] duration-500 shadow-lg text-colorBlack ${visible ? 'bottom-[2%]' : 'bottom-[-10%]'}`}><FaAngleUp /></a>
+        <a onClick={HandleTop} href={'#'} className={`opacity-100 fixed z-10 right-[2%] bottom-[-10%] bg-white w-12 h-12 border flex items-center justify-center text-xl rounded-[50%] duration-500 shadow-lg text-colorBlack ${visible ? 'bottom-[2%]' : 'bottom-[-10%]'}`}><FaAngleUp /></a>
     )
 }
 
